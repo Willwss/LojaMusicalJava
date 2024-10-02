@@ -1,0 +1,37 @@
+create table cordas(
+    idinstrumentocorda bigint auto_increment,
+    marca varchar(100) not null,    
+    modelo varchar(100) not null,
+    ano int not null,
+    valorcusto double not null,
+    quantidade int not null,
+    primary key(idinstrumentocorda));
+
+
+create table percussao(
+    idinstrumentopercussao bigint auto_increment,
+    marca varchar(100) not null,    
+    modelo varchar(100) not null,
+    ano int not null,
+    valorcusto double not null,
+    quantidade int not null,
+    primary key(idinstrumentopercussao));
+
+
+insert into cordas(idinstrumentocorda, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"Gibson", "Les Paul", 1959, 3000, 2);
+
+insert into cordas(idinstrumentocorda, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"Fender", "Stratocaster American", 2017, 2500, 15);
+
+insert into cordas(idinstrumentocorda, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"Gibson", "Firebird", 2018, 4500, 20);
+
+insert into percussao(idinstrumentopercussao, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"Yamaha", "Bateria Eletrica", 2018, 5500, 15);
+
+insert into percussao(idinstrumentopercussao, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"RMV", "Bateria Acustica", 2017, 5000, 10);
+
+insert into percussao(idinstrumentopercussao, marca, modelo, ano, valorcusto, quantidade)
+    values(null,"Yamaha", "Bateria Acustica", 2018, 6000, 20);
